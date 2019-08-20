@@ -1,0 +1,575 @@
+<?php
+error_reporting(0);
+		extract($_POST);
+		if(isset($submit)){
+			$to = "info@leisurepromotion.com";
+			$subject = "Enquiry";
+			$txt ="Name:".$name."Email:".$email."Message:".$message."Phone:".$mobile;
+			$headers = "From:'.$email.' " . "\r\n" .
+			mail($to,$subject,$txt,$headers);
+			echo("<script>alert('Successfully Sent');</script>");
+}
+?>
+
+<!DOCTYPE html>
+<html class="" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- GOOGLE FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS LIBRARY -->
+    <!-- Bootstrap -->
+    <link type="text/css" href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/navigation.css" rel="stylesheet">
+    <link type="text/css" href="css/lib/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+
+    <!-- Font Icon -->
+    <link type="text/css" href="css/lib/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="css/lib/cortana.css" rel="stylesheet">
+
+
+    <!-- Revolution Slider -->
+    <link type="text/css" href="rs-plugin/css/settings.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link type="text/css" href="css/lib/owl.carousel.css" rel="stylesheet">
+
+    <!-- Select into div -->
+    <link type="text/css" href="css/lib/select2.min.css" rel="stylesheet">
+
+    <!-- Magnific Popup -->
+    <link type="text/css" href="css/lib/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+
+    <link type="text/css" href="css/Footer-with-map.css" rel="stylesheet">
+
+   
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <title>Addmarc</title>
+	<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5d28c1aa35a1b20012696bc0&product=sticky-share-buttons"></script>
+</head>
+<body>
+
+
+<!-- HEADER 6 -->
+<header class="header head6">
+
+    <div class="top-header top-header-3">
+       
+    </div><!-- /top-header -->
+
+    <div class="main-header main-header-6">
+        <div class="container-fluid" style="padding:0 60px;">
+            <div class="col-sm-12 col-xs-12 col-md-4">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo" style="height: 80px; width:180px"></a>
+            </div><!-- /#logo -->
+            <!-- END / LOGO -->
+			</div>
+			
+            <!-- INFO CONTACT -->
+			<div class="col-sm-12 col-xs-12 col-md-4">
+            <div class="info-contact">
+                <h3 style="color:#46A5AE; text-align:right; line-height:30px;">Call Us : 011-26227222 / 333<br>(+91) 981 851 1337</h3>
+				
+            </div><!-- /info-contact -->
+			</div>
+            <!-- END / INFO CONTACT -->
+            <div class="col-sm-12 col-xs-12 col-md-4">
+                <div class="sharethis-inline-share-buttons" style="margin-top: 5%;"></div>
+            </div>
+			
+        </div><!-- /container -->
+    </div>
+
+<div class="navBar6">
+<div class="container-fluid">
+    <div class="topnav1" id="myTopnav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Our Services</a>
+          <a href="marketing.html">Marketing</a>
+          <a href="clients.html">Our Clients</a>
+          <div class="dropdown1">
+            <button class="dropbtn1">Our Projects 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content1">
+              <a href="projects.html">Current Projects</a>
+              <a href="projects.html">Upcoming Projects</a>
+            </div>
+          </div>
+          <a href="presence.html">Our Presence</a>
+          <a href="contact.html">Contact us</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon1" onclick="callMe()">&#9776;</a>
+    </div><!-- /myTopnav -->
+</div>
+</div>
+</header><!-- /header -->
+<!-- END / HEADER 6 -->
+
+<div id="page-wrap">
+    
+    
+    <section class="section bg-white pt-40" style="border-top:8px solid #46A5AE; padding-bottom:0px;">
+        <div class="container-fluid" style="padding:0 60px;">
+            <div class="row">
+				<h3 style="text-align:center;">Thank You</h3>
+			</div>
+        </div><!-- /container -->
+    </section>
+    <!-- END / ABOUT -->
+
+
+   <!-- PORTFOLIO 2 -->
+    <section class="section pt-60 pb-60" style="background:#fff; padding-top:60px;">
+        
+        <div class="container-fluid">
+			<div class="portfolio-slider">
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c1.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Royal Orchid, <span style="color:#46A5AE !important;">Masoorie</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c2.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Golden Tulip,  <span style="color:#46A5AE !important;">Goa</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c3.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Piccadilli,  <span style="color:#46A5AE !important;">Manali</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c4.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Landmark Hotel,  <span style="color:#46A5AE !important;">Ratnagiri</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c5.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Surya Palace,  <span style="color:#46A5AE !important;">Vadodra</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c6.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Midtown,  <span style="color:#46A5AE !important;">Hisar</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c7.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">The Piccadily,  <span style="color:#46A5AE !important;">Lucknow</span></h5>
+				</div><!-- /portfolio-item -->
+				
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c8.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Surya hotel,  <span style="color:#46A5AE !important;">Varanasi</span></h5>
+				</div><!-- /portfolio-item -->
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c9.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel The Perl,  <span style="color:#46A5AE !important;">Chandigarh</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c10.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Export Hotel,  <span style="color:#46A5AE !important;">Hyderabad</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c11.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Charnock Hotel,  <span style="color:#46A5AE !important;">Burdwan</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c12.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">President Hotel,  <span style="color:#46A5AE !important;">Mysore</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c13.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Mandakini Ambience,  <span style="color:#46A5AE !important;">Pune</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c14.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">The Legend Inn,  <span style="color:#46A5AE !important;">Nagpur</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c15.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Pearl Hotel,  <span style="color:#46A5AE !important;">Alwar</span></h5>
+				</div><!-- /portfolio-item -->
+				
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c16.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Solitaire Grand,  <span style="color:#46A5AE !important;">Sirsa</span></h5>
+				</div><!-- /portfolio-item -->
+				
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c17.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Narayan Niwas,  <span style="color:#46A5AE !important;">Jaisalmer</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c18.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Indraprastha Resort,  <span style="color:#46A5AE !important;">Dalhousi</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c19.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Ilbert Manor Resort,  <span style="color:#46A5AE !important;">Mussoorie</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c20.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Prime Presidency,  <span style="color:#46A5AE !important;">Sri Ganganagar</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c21.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Lal Maha Palace,  <span style="color:#46A5AE !important;">Jaipur</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c22.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Park Century,  <span style="color:#46A5AE !important;">Hisar</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c23.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Excellency Hotel,  <span style="color:#46A5AE !important;">Bhubneshwar</span></h5>
+				</div><!-- /portfolio-item -->
+				
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c24.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel B K Castles,  <span style="color:#46A5AE !important;">Jabalpur</span></h5>
+				</div><!-- /portfolio-item -->
+				
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c25.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Bahia Resort,  <span style="color:#46A5AE !important;">Bhatinda</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c26.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Mandakini Royal,  <span style="color:#46A5AE !important;">Kanpur</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c27.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Venice,  <span style="color:#46A5AE !important;">Pathankot</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c28.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Ritz Plaza,  <span style="color:#46A5AE !important;">Amritsar</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c29.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">House of MG,  <span style="color:#46A5AE !important;">Ahmedabad</span></h5>
+				</div><!-- /portfolio-item -->
+				
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c30.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Florence Hotel,  <span style="color:#46A5AE !important;">Raipur</span></h5>
+				</div><!-- /portfolio-item -->
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c31.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Imperial Executive,  <span style="color:#46A5AE !important;">Ludhiana</span></h5>
+				</div><!-- /portfolio-item -->
+
+				<div class="portfolio-item">
+					<div class="portfolio-media hover-link">
+						<img src="img/c32.jpg" alt="" />
+					</div><!-- /hover-link -->
+					<h5 class="text-uppercase" style="font-size:13px;">Hotel Yuvraj,  <span style="color:#46A5AE !important;">Vadodra</span></h5>
+				</div><!-- /portfolio-item -->
+				
+			</div><!-- /portfolio-slider -->
+			
+		</div><!-- /container -->
+	</section>
+    <!-- END / PORTFOLIO 2 -->
+
+     <!-- COUNTER 3 -->
+    <section class="section bg-parallax pb-100" data-background="img/image1.jpg" style="margin-bottom:70px;">
+        <div class="bg-overlay-black bg-overlay-7"></div>
+        <div class="container-fluid" style="padding:0 60px;">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12" style="padding:0 40px;">
+                    <div class="counter">
+                        <p class="count-number">700</p>
+                        <h3>Clients</h3>
+                    </div><!-- /counter -->
+                </div><!-- /col -->
+                <div class="col-md-3 col-sm-6 col-xs-12" style="padding:0 40px;">
+                    <div class="counter">
+                        <p class="count-number">1000000</p>
+                        <h3>Customers</h3>
+                    </div><!-- /counter -->
+                </div><!-- /col -->
+                <div class="col-md-3 col-sm-6 col-xs-12" style="padding:0 40px;">
+                    <div class="counter">
+                        <p class="count-number">29</p>
+                        <h3>States</h3>
+                    </div><!-- /counter -->
+                </div><!-- /col -->
+                <div class="col-md-3 col-sm-6 col-xs-12" style="padding:0 40px;">
+                    <div class="counter">
+                        <p class="count-number">250</p>
+                        <h3>Team Members</h3>
+                    </div><!-- /counter -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        <div class="stat-trigger"></div>
+    </section>
+    <!-- END / COUNTER 3 -->
+   
+    <!-- FOOTER -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>WEBSITE LINKS</h5>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT Us</a></li>
+                        <li><a href="services.html">OUR SERVICES</a></li>
+                        <li><a href="marketing.html">MARKETING</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>QUICK LINKS</h5>
+                    <ul>
+                        <li><a href="clients.html">OUR CLIENTS</a></li>
+                        <li><a href="presence.html">OUR PRESENCE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>PROJECTS</h5>
+                    <ul>
+                        <li><a href="#">CURRENT PROJECTS</a></li>
+                        <li><a href="#">UPCOMING PROJECTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>CONTACT US</h5>
+                    <ul>
+                        <li>248, Ground Floor, Sant Nagar, East Of Kailash, 
+New Delhi - 110065, Delhi (India)</li>
+                        <li>011-26227222 / 26227333, 9818511337</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Here we use the Google Embed API to show Google Maps. -->
+            <!-- In order for this to work in your project you will need to generate a unique API key.  -->
+            <iframe id="map-container" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.2358590588071!2d77.2481316581133!3d28.555594495612034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3c84ce5a5ad%3A0xf918194e72b7f198!2s248%2C+Sant+Nagar%2C+East+of+Kailash%2C+New+Delhi%2C+Delhi+110065!5e0!3m2!1sen!2sin!4v1517570027883" >
+            </iframe>
+        </div>
+        <div class="social-networks">
+            <a href="https://www.facebook.com/ADDMARCADVERTISING?ref=bookmarks" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/addmarc-a-unit-of-leisure-promotion-pvt-ltd-37416015b/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/LeisurePromotio" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/leisurepromotion/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://plus.google.com/114557283295273837544" class="google"><i class="fa fa-google-plus"></i></a>
+            
+            
+        </div>
+        <div class="container-fluid" style="background-color: #10222e;">
+            <div class="row">
+                <div class="col-md-6 pull-left">
+                    <div class="footer-copyright">
+                        <p style="font-family:courier;">© 2018 Copyright Text </p>
+                    </div>
+                </div>
+                <div class="col-md-6 pull-right">
+                        <div class="footer-designBy">
+                            <p>Designed by <a href="http://kodesoftsolutions.com">Kodesoftsolutions.com</a></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END / FOOTER -->
+</div><!-- /page-wrap -->
+<div id="abc">
+<!-- Popup Div Starts Here -->
+<div id="popupContact">
+<div class="row">
+<!-- Contact Us Form -->
+<form action="thank.php" id="form" method="post" name="form">
+<img id="close" src="img/3.png" onclick ="div_hide()">
+<h2>Reach Us</h2>
+<hr>
+<input id="name" name="name" placeholder="Name" type="text">
+<input id="email" name="email" placeholder="Email" type="text">
+<input id="mobile" name="mobile" placeholder="Contact No." type="text">
+<textarea id="msg" name="message" placeholder="Message"></textarea>
+<input type="submit" value="Send" name="submit" style="background: #4FA9B2; color: #fff; font-size: 18px;">
+</form>
+</div>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+
+<!-- Display Popup Button -->
+<button class="my_button" id="popup" onclick="div_show()">Reach Us</button>
+
+
+<!-- JQUERY -->
+    <script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.bootstrap-touchspin.min.js"></script>
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="js/lib/owl.carousel.min.js"></script>
+    <!-- Overflow Text -->
+    <script type="text/javascript" src="js/lib/overflow-text.js"></script>
+
+    <!-- Easing -->
+    <script type="text/javascript" src="js/lib/jquery.easing.min.js"></script>
+
+    <!-- Select to div -->
+    <script type="text/javascript" src="js/lib/select2.min.js"></script>
+
+    <!-- Parallax -->
+    <script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script>
+
+    <!-- Waypoint -->
+    <script type="text/javascript" src="js/lib/waypoints.min.js"></script>
+
+    <!-- Count To -->
+    <script type="text/javascript" src="js/lib/jquery.countTo.js"></script>
+
+    <!-- Magnific Popup -->
+    <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
+
+    <!-- Image Loaded -->
+    <script type="text/javascript" src="js/lib/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Isotope -->
+    <script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
+
+    
+    <!-- Custom jQuery -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+	
+    <script>
+	// Validating Empty Field
+function check_empty() {
+if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+alert("Fill All Fields !");
+} else {
+document.getElementById('form').submit();
+alert("Form Submitted Successfully...");
+}
+}
+//Function To Display Popup
+function div_show() {
+document.getElementById('abc').style.display = "block";
+}
+//Function to Hide Popup
+function div_hide(){
+document.getElementById('abc').style.display = "none";
+}
+function callMe() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav1") {
+    x.className += " responsive1";
+  } else {
+    x.className = "topnav1";
+  }
+}
+// $(document).ready(function () {
+//     $(".hide").removeClass("hide");
+//     $(".hide").addClass("show");
+
+// });
+	</script>
+    <!-- back to top scroll button -->
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+</body>
+
+</html>
